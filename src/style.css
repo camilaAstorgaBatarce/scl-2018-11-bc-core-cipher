@@ -1,1 +1,96 @@
-/* Acá va tu código */
+#comienza_div{
+  display:block;
+    /* background-color: #DD4F41; */
+  }
+
+#div_1{
+  display: none;
+  /* background-color: #DD4F41; */
+}
+
+#eloffset, #eltexto{
+  width: 100%
+}
+
+body{
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url('./imagenes/fondo_cif.png');
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+
+.imagen_logo{
+   margin-top: 80px;
+}
+
+h1{
+  text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    color:#fff
+}
+/* table{
+margin-left: 720px;
+} */
+.UC {
+  font-size: 22px;
+  color:#fff
+}
+.IN {
+margin-bottom: 0px;
+margin-top: 20px;
+text-align: center;
+padding: 8px;
+font-size: 20px;
+color: #333333;
+border-radius: 20px;
+border: solid white;
+background-color: white;
+box-shadow: 0px 3px 8px 0px #1b1a1a;
+}
+
+#NOM  {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 20px;
+  border: solid #333333;
+  background-color: #333333;
+  box-shadow: 0px 3px 8px 3px #1b1a1a;
+}
+#CON {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 20px;
+  border: solid #333333;
+  background-color: #333333;
+  box-shadow: 0px 3px 8px 3px #1b1a1a;
+}
+
+#nombre_jugador {
+  font-size: 60px;
+  margin-top: 180px;
+  color: #fff;
+}
+p{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0;
+  color:#fff;
+}
+.pa_2{
+  text-align: center;
+  font-size: 20px;
+  color:#fff;
+}
+
+.form_uno {
+  width: 400px;
+  margin: auto;
+}
