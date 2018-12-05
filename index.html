@@ -1,15 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Cifrado Cesar</title>
   </head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <div  id="comienza_div">
+      <form class="form_uno" action="index.html" method="post">
+
+      <img src="imagenes/logo.png" class="imagen_logo" width="300px" />
+    <h1>¡Bienvenido a SECRET AGENT!</h1>
+    <p>Te inviamos a ser parte de nuestra plataforma que te permite codificar tus contraseñas secretas para que solo tú puedas entender</p>
+
+    <table>
+    <tr>
+      <td class="UC">Usuario:</td>
+      <td><input type="text" id="NOM" placeholder="Nombre de Usuario"></td>
+    </tr>
+    <tr>
+        <td class="UC">Contraseña:</td>
+        <td><input type="password" id="CON" placeholder="Password"></td>
+    </tr>
+
+    </table>
+
+   <button class="IN" onclick="save()" >Iniciar sesión</button>
+   </form>
+
+   </div>
+
+   <div id="div_1">
+     <form class="form_dos" action="index.html" method="post">
+
+   <h1 id="nombre_jugador"></h1>
+   <p class="pa_2">Esta plataforma no te permite cifrar textos que contengan simbolos y la letra "ñ" </p>
+
+<table>
+
+    <tr>
+    <td>Nivel de dificultad:</td>
+    <td> <input type="number" id="eloffset" name"texto" min="1" max="100"></td>
+  </tr>
+
+  <tr>
+    <td>Ingrese su clave aquí</td>
+    <td><input type="text" id="eltexto"></td>
+  </tr>
+  <tr>
+    <td><button type="submit" onclick="codificar()" >Cifrar texto</button ></td>
+    <td>  <button type="submit" onclick="decodificar()" >Desifrar texto</button></td>
+  </tr>
+</table>
+
+  <textarea id="texto_entra" readonly placeholder="Ingrese su texto aqui" rows="5" cols="40"></textarea>
+
+  </form>
+
+ </div>
+
+
+    <script type="text/javascript"src="app.js">
+    </script>
+    <script type="text/javascript"src="cipher.js">
+
+    </script>
   </body>
 </html>
