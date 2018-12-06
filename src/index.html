@@ -11,10 +11,10 @@
       <form class="form_uno" action="index.html" method="post">
 
       <img src="imagenes/logo.png" class="imagen_logo" width="300px" />
-    <h1>¡Bienvenido a SECRET AGENT!</h1>
-    <p>Te inviamos a ser parte de nuestra plataforma que te permite codificar tus contraseñas secretas para que solo tú puedas entender</p>
+    <h1>SECRET AGENT</h1>
+    <p>Bienvenido a nuestra plataforma, la cual te permite codificar tus contraseñas y claves secretas para obtener mayor seguridad utilizando el sistema de Cifrado Cesar .</p>
 
-    <table>
+    <table id="table_uno">
     <tr>
       <td class="UC">Usuario:</td>
       <td><input type="text" id="NOM" placeholder="Nombre de Usuario"></td>
@@ -26,7 +26,9 @@
 
     </table>
 
-   <button class="IN" onclick="save()" >Iniciar sesión</button>
+   <button id="save" class="IN">Iniciar sesión</button>
+   <br>
+   <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank" > ¿Quieres saber más sobre el Cifrado Cesar?</a>
    </form>
 
    </div>
@@ -35,36 +37,33 @@
      <form class="form_dos" action="index.html" method="post">
 
    <h1 id="nombre_jugador"></h1>
-   <p class="pa_2">Esta plataforma no te permite cifrar textos que contengan simbolos y la letra "ñ" </p>
+   <p class="pa_2">Esta plataforma no permite cifrar "ñ". </p>
 
-<table>
+   Nivel de dificultad:<input type="number" id="eloffset" name="texto" min="1" max="100">
+   <br>
+  <input type="text" id="eltexto" placeholder="Ingrese su texto aquí">
 
-    <tr>
-    <td>Nivel de dificultad:</td>
-    <td> <input type="number" id="eloffset" name"texto" min="1" max="100"></td>
-  </tr>
+<table id="table_dos">
 
   <tr>
-    <td>Ingrese su clave aquí</td>
-    <td><input type="text" id="eltexto"></td>
-  </tr>
-  <tr>
-    <td><button type="submit" onclick="codificar()" >Cifrar texto</button ></td>
-    <td>  <button type="submit" onclick="decodificar()" >Desifrar texto</button></td>
+    <td><button type="submit" id= "codificar" >Cifrar texto</button ></td>
+    <td>  <button type="submit" id= "decodificar" >Descifrar texto</button></td>
   </tr>
 </table>
 
-  <textarea id="texto_entra" readonly placeholder="Ingrese su texto aqui" rows="5" cols="40"></textarea>
+  <textarea id="texto_entra" readonly placeholder="Resultado" rows="5" cols="40"></textarea>
+  <br>
+  <!-- <div id="div_2">
+    <button id="guardar" class="GR">Guardar</button>
+
+  </div> -->
 
   </form>
 
  </div>
 
 
-    <script type="text/javascript"src="app.js">
-    </script>
-    <script type="text/javascript"src="cipher.js">
-
-    </script>
+    <script type="text/javascript" src="index.js"> </script>
+    <script type="text/javascript" src="cipher.js"> </script>
   </body>
 </html>
