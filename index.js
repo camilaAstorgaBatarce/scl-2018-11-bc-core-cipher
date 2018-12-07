@@ -31,9 +31,8 @@
       document.getElementById(`texto_entra`).value = elresultadofinal;//Agregado
     });
 
-  //   document.getElementById(`guardar`).addEventListener(`click`, (evento) => {
-  //     evento.preventDefault();
-  //     document.getElementById(`div_1`).style.display = `block`;
-  //     document.getElementById(`div_2`).style.display = `none`;
-  //   }
-  // });
+    document.getElementById(`guardar`).addEventListener(`click`, (evento) => {
+      evento.preventDefault();
+      document.getElementById(`comienza_div`).style.display = `block`;
+      document.getElementById(`div_2`).style.display = `none`;
+  });

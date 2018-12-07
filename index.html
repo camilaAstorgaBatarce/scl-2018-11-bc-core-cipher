@@ -6,13 +6,14 @@
     <title>Cifrado Cesar</title>
   </head>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
   <body>
     <div  id="comienza_div">
       <form class="form_uno" action="index.html" method="post">
 
       <img src="imagenes/logo.png" class="imagen_logo" width="300px" />
-    <h1>SECRET AGENT</h1>
-    <p>Bienvenido a nuestra plataforma, la cual te permite codificar tus contraseñas y claves secretas para obtener mayor seguridad utilizando el sistema de Cifrado Cesar .</p>
+    <h1>Secret Agent</h1>
+    <p class="pa_1">Bienvenido a nuestra plataforma, la cual te permite codificar tus contraseñas y claves secretas para obtener mayor seguridad utilizando el sistema de Cifrado Cesar .</p>
 
     <table id="table_uno">
     <tr>
@@ -28,7 +29,7 @@
 
    <button id="save" class="IN">Iniciar sesión</button>
    <br>
-   <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank" > ¿Quieres saber más sobre el Cifrado Cesar?</a>
+   <a id ="link" href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank" >¿Quieres saber más sobre el Cifrado Cesar?</a>
    </form>
 
    </div>
@@ -37,10 +38,12 @@
      <form class="form_dos" action="index.html" method="post">
 
    <h1 id="nombre_jugador"></h1>
-   <p class="pa_2">Esta plataforma no permite cifrar "ñ". </p>
 
-   Nivel de dificultad:<input type="number" id="eloffset" name="texto" min="1" max="100">
+
+   Nivel de dificultad:<input type="number" id="eloffset" name="texto" min="1" max="33">
    <br>
+<p class="pa_2">Ahora puedes ingresar la clave o contraseña que deseas cifrar</p>
+   <p class="pa_3">Esta plataforma no permite cifrar "ñ" y simbolos. </p>
   <input type="text" id="eltexto" placeholder="Ingrese su texto aquí">
 
 <table id="table_dos">
@@ -52,14 +55,12 @@
 </table>
 
   <textarea id="texto_entra" readonly placeholder="Resultado" rows="5" cols="40"></textarea>
+
   <br>
-  <!-- <div id="div_2">
-    <button id="guardar" class="GR">Guardar</button>
 
-  </div> -->
+  <button id="guardar" class="GR">Guardar</button>
 
-  </form>
-
+</form>
  </div>
 
 
