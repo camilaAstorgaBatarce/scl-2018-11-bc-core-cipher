@@ -1,9 +1,9 @@
 window.cipher = {
   encode: (texto, offset) => {
     /* Acá va tu código */
-    var result = '';
+    let result = '';
     offset = parseInt(offset);
-    for (var i = 0; i < texto.length; i++) {
+    for (let i = 0; i < texto.length; i++) {
       if (texto[i] == ' '){
         result += ' ';
       } else if (texto[i] == "ñ") {
@@ -12,9 +12,9 @@ window.cipher = {
           result += "Ñ";
         continue;
     } else {
-      var posicion_ascii = texto.charCodeAt(i);
+      let posicion_ascii = texto.charCodeAt(i);
       if (posicion_ascii>= 33 && posicion_ascii<=126){
-      var nueva_posicion_ascii = (posicion_ascii - 33 + offset) % 93 + 33;
+      let nueva_posicion_ascii = (posicion_ascii - 33 + offset) % 93 + 33;
       result += String.fromCharCode(nueva_posicion_ascii);
     }
       }
@@ -23,9 +23,9 @@ window.cipher = {
   },
   decode: (texto, offset) => {
     /* Acá va tu código */
-  var result_decodificar = '';
+  let result_decodificar = '';
   offset = parseInt(offset);
-    for (var i = 0; i < texto.length; i++) {
+    for (let i = 0; i < texto.length; i++) {
         if (texto[i] == ' '){
           result_decodificar += ' ';
         } else if (texto[i] == "ñ") {
@@ -34,9 +34,9 @@ window.cipher = {
             result_decodificar += "Ñ";
           continue;
       } else {
-      var posicion_ascii = texto.charCodeAt(i);
+      let posicion_ascii = texto.charCodeAt(i);
       if (posicion_ascii>= 33 && posicion_ascii<=126){
-      var nueva_posicion_ascii = (posicion_ascii - 126 - offset) % 93 + 126;
+      let nueva_posicion_ascii = (posicion_ascii - 126 - offset) % 93 + 126;
       result_decodificar += String.fromCharCode(nueva_posicion_ascii)
     }
     }
