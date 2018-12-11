@@ -2,8 +2,8 @@
   // function save(){
   document.getElementById(`save`).addEventListener(`click`, (evento) => {
     evento.preventDefault();
-    var primerElemento = document.getElementById(`NOM`).value;
-    var segundoElemento = document.getElementById(`CON`).value;
+    let primerElemento = document.getElementById(`NOM`).value;
+    let segundoElemento = document.getElementById(`CON`).value;
     if (primerElemento == "" || segundoElemento == ""){
       alert(`Ingrese un usuario y una contraseña valida`)
     }else{
@@ -16,18 +16,18 @@
     // var codificar = () => {
     document.getElementById(`codificar`).addEventListener(`click`, (evento) => {
       evento.preventDefault();
-      var frase_uno = document.getElementById('eltexto').value;
-      var offset_uno = document.getElementById('eloffset').value;
-      var elresultadofinal = cipher.encode(frase_uno, offset_uno);
+      let frase_uno = document.getElementById('eltexto').value;
+      let offset_uno = document.getElementById('eloffset').value;
+      let elresultadofinal = cipher.encode(frase_uno, offset_uno);
       document.getElementById(`texto_entra`).value = elresultadofinal;
     });
 
     // var decodificar = () => {
     document.getElementById(`decodificar`).addEventListener(`click`, (evento) => {
       evento.preventDefault();
-      var frase_dos = document.getElementById('eltexto').value;
-      var offset_dos = document.getElementById('eloffset').value;
-      var elresultadofinal = cipher.decode(frase_dos, offset_dos);
+      let frase_dos = document.getElementById('eltexto').value;
+      let offset_dos = document.getElementById('eloffset').value;
+      let elresultadofinal = cipher.decode(frase_dos, offset_dos);
       document.getElementById(`texto_entra`).value = elresultadofinal;//Agregado
     });
 
@@ -36,3 +36,11 @@
       document.getElementById(`comienza_div`).style.display = `block`;
       document.getElementById(`div_2`).style.display = `none`;
   });
+
+// elemento para rerescar la página
+// document.getElementById('refreshPage').addEventListener(`click`, (evento) => {
+//   evento.preventDefault();
+//   document.getElementById('eloffset').value = "";
+//   document.getElementById('eltext').value = "";
+//   document.getElementById('texto_entra').value = "";
+// });
